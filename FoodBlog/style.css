@@ -15,15 +15,22 @@ nav {
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
     box-shadow: 0 8px 6px -6px #999;
-
 }
 
-li {
-    display: inline;
-    padding: 10px;
+nav ul li:first-child {
+    top: 0;
+    float: left;
+    color: saddlebrown;
 }
 
-li a {
+nav ul li {
+    top: 0;
+    list-style:none;
+    margin: 10px;
+    float: right; 
+}
+
+ul li, ul li a{
     text-decoration: none;
     color: saddlebrown;
 }
@@ -37,17 +44,36 @@ li a:hover {
     width: 100%;
     height: 450px;
     text-align: center;
+    margin-bottom: 10px;
 }
 
 .main {
-    width: 70%;
+    width: 65%;
     float: left;
+    margin-bottom: 10px;
 }
 
 .sidebar {
     width: 30%;
     float: right;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
+
+#search {
+    font-family: 'Carme', sans-serif;
+    border-radius: 4px;
+}
+
+footer {
+    text-align: center;
+}
+
+footer ul li {
+    list-style: none;
+    display: inline;
+}
+
 
 
 
