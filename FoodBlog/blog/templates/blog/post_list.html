@@ -1,0 +1,22 @@
+{% load static %}
+<html lang = "en">
+    <head>
+        <title>Perth's Premier Food Blog</title>
+        <link rel = "stylesheet" href = "{% static 'style.css'%}">
+    </head>
+    <body>
+        <header>
+            <a href = "{% url 'post_new'%}"></a>
+        </header>
+        <p>Testing</p>
+        <p>lorem ipsum and shit</p>
+        {% for post in posts %}
+            <div>
+            <p> published : {{ post.published_date}}</p>
+            <h1><a href = "">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+
+    </body>
+</html>
